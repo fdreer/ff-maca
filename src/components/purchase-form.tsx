@@ -115,7 +115,7 @@ export const PurchaseForm = () => {
         <Form {...form}>
             <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="max-w-[350px] w-full rounded-lg p-6 space-y-3"
+                className="max-w-[350px] w-full rounded-lg space-y-3"
             >
                 {/* CONCEPT INPUT */}
                 <FormField

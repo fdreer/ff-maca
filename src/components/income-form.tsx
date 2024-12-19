@@ -106,7 +106,7 @@ export const IncomeForm = () => {
         <Form {...form}>
             <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="max-w-[350px] w-full p-6 space-y-3"
+                className="max-w-[350px] w-full space-y-3"
             >
                 {/* CONCEPT INPUT */}
                 <FormField
