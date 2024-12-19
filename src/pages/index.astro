@@ -1,0 +1,35 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import { Button } from '@/components/ui/button'
+---
+
+<Layout title="FF Franco">
+    <main>
+        <h1>FLUJO DE FONDOS</h1>
+        <div class="flex gap-4 p-10">
+            <Button>
+                <a href="/ingreso">INGRESO</a>
+            </Button>
+            <Button>
+                <a href="/egreso">EGRESO</a>
+            </Button>
+        </div>
+        <iframe
+            src="https://docs.google.com/spreadsheets/d/1x-cvoqAnvVfzxM9gF6k7mUfmV2eKCOVmYJK3t_kIsKc/pubhtml?gid=2027687483&single=true&widget=true&headers=false"
+        ></iframe>
+    </main>
+</Layout>
+
+<style>
+    iframe {
+        width: 520px;
+        height: 220px;
+    }
+
+    @media (max-width: 768px) {
+        iframe {
+            width: 100%;
+            max-width: 520px;
+        }
+    }
+</style>
