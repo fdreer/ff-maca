@@ -19,7 +19,7 @@ export const savePurchases = async (purchases: PurchaseSheet[]) => {
                 MONEDA: purchase.currency,
                 IMPORTE_TOTAL: purchase.totalAmount,
                 CUOTA_NUMERO: purchase.numberQuota,
-                FECHA_PAGO_CUOTA: purchase.payQuotaDate,
+                FECHA_PAGO_CUOTA: purchase.payQuotaDate.split('T')[0],
                 MONTO_X_CUOTA: purchase.amountQuota,
                 ESTA_PAGO: 'NO',
                 CONDICION: 'FINANCIADO'
@@ -37,7 +37,7 @@ export const savePurchases = async (purchases: PurchaseSheet[]) => {
             IMPORTE_TOTAL: purchase.totalAmount,
             CUOTA_NUMERO: purchase.numberQuota,
             MONTO_X_CUOTA: purchase.amountQuota,
-            FECHA_PAGO_CUOTA: purchase.purchaseDate,
+            FECHA_PAGO_CUOTA: purchase.purchaseDate.split('T')[0],
             ESTA_PAGO: 'SI',
             CONDICION: 'CONTADO'
         })
